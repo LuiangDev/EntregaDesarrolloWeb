@@ -1,42 +1,116 @@
-/* Estilos para la sección de habilidades */
-.skills-section {
-    padding: 4rem 0;
+.hero-section {
+  padding: 32px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .hero-section {
+    padding: 64px;
+    text-align: left;
   }
-  
-  .skill-card {
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+}
+@media (min-width: 992px) {
+  .hero-section {
+    display: flex;
+    align-items: center;
   }
-  
-  .skill-card:hover {
-    transform: translateY(-5px);
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: rgb(29.2970711297, 110.6778242678, 165.2029288703);
+}
+
+header {
+  background: #2ecc71;
+  padding: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+header nav ul li a:hover {
+  color: #3498db;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .skill-icon {
-    font-size: 2rem;
-    color: var(--primary);
+}
+#about,
+#projects,
+#contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  /* Estilos para proyectos destacados */
-  .featured-projects {
-    background-color: #f8f9fa;
-    padding: 4rem 0;
+  to {
+    opacity: 1;
   }
-  
-  .project-card {
-    border-radius: 10px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    height: 100%;
-  }
-  
-  .project-card:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  .project-card img {
-    height: 200px;
-    object-fit: cover;
-  }
+}
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+.btn {
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "entregadesarrolloweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass scss/:css/ --watch --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuiangDev/EntregaDesarrolloWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuiangDev/EntregaDesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/LuiangDev/EntregaDesarrolloWeb#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.86.0"
+  }
+}
