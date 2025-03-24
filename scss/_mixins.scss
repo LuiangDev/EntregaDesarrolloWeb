@@ -1,0 +1,27 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin respond-to($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+.hero-section {
+    padding: $spacing-large;
+    background-color: $light-gray;
+    text-align: center;
+    
+    @include respond-to($tablet) {
+        padding: $spacing-large * 2;
+        text-align: left;
+    }
+    
+    @include respond-to($desktop) {
+        display: flex;
+        align-items: center;
+    }
+}

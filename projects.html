@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Página específica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tu CSS generado desde SASS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navbar común a todas las páginas -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Mi Portafolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="certifications.html">Certificaciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido específico de cada página irá aquí -->
+    <main class="flex-grow-1">
+        <!-- Projects Hero -->
+        <section class="projects-hero py-5 bg-primary text-white">
+            <div class="container">
+                <h1 class="display-4 fw-bold text-center">Mis Proyectos</h1>
+                <p class="lead text-center">Explora mi trabajo y las tecnologías utilizadas</p>
+            </div>
+        </section>
+    
+        <!-- Projects Filter -->
+        <section class="filter-section py-4 bg-light">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <button class="btn btn-outline-primary mx-2 mb-2 filter-btn active" data-filter="all">Todos</button>
+                    <button class="btn btn-outline-primary mx-2 mb-2 filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="btn btn-outline-primary mx-2 mb-2 filter-btn" data-filter="backend">Backend</button>
+                    <button class="btn btn-outline-primary mx-2 mb-2 filter-btn" data-filter="fullstack">Fullstack</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Projects Grid -->
+        <section class="projects-grid py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Proyecto 1 -->
+                    <div class="col-md-6 col-lg-4 project-item" data-category="fullstack">
+                        <div class="card h-100 project-card">
+                            <img src="img/project1.jpg" class="card-img-top" alt="Proyecto E-commerce">
+                            <div class="card-body">
+                                <div class="badges mb-3">
+                                    <span class="badge bg-primary me-1">React</span>
+                                    <span class="badge bg-primary me-1">Node.js</span>
+                                    <span class="badge bg-primary">MongoDB</span>
+                                </div>
+                                <h3 class="h5">Tienda E-commerce</h3>
+                                <p class="card-text">Plataforma completa de comercio electrónico con carrito de compras, autenticación y pasarela de pagos.</p>
+                            </div>
+                            <div class="card-footer bg-transparent">
+                                <a href="#" class="btn btn-sm btn-primary me-2">Ver Demo</a>
+                                <a href="#" class="btn btn-sm btn-outline-secondary">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Proyecto 2 -->
+                    <!-- Proyecto 3 -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer común a todas las páginas -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="footer-heading">Redes Sociales</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">© 2023 Mi Portafolio. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
