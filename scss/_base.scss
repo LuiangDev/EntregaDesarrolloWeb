@@ -1,25 +1,33 @@
 body {
-    font-family: 'Arial', sans-serif;
-    color: $text-color;
-    font-size: 1rem;
-    line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  color: $text-color;
+  font-size: 1rem;
+  line-height: 1.6;
 
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.5em; }
-    h3 { font-size: 1.25em; }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
 }
 
-h1, h2, h3 {
-    margin-bottom: $spacing-medium;
-    line-height: 1.2;
+h1,
+h2,
+h3 {
+  margin-bottom: $spacing-medium;
+  line-height: 1.2;
 }
 
 a {
-    color: $primary-color;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
 
-    &:hover {
-        color: darken($primary-color, 15%);
-    }
+  &:hover {
+    color: darken($primary-color, 15%);
+  }
 }

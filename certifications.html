@@ -1,122 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portafolio | Página específica</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome para íconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Tu CSS generado desde SASS -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body class="d-flex flex-column min-vh-100">
-    <!-- Navbar común a todas las páginas -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Enlace para íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- CSS generado desde SASS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Mi Portafolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="certifications.html">Certificaciones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">LuiangDev.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="certifications.html"
+                  >Certificaciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <!-- Contenido específico de cada página irá aquí -->
+    <!-- Contenido-->
     <main class="flex-grow-1">
-        <!-- Certifications Hero -->
-        <section class="certs-hero py-5 bg-secondary text-white">
-            <div class="container">
-                <h1 class="display-4 fw-bold text-center">Certificaciones</h1>
-                <p class="lead text-center">Mis credenciales y logros académicos</p>
-            </div>
-        </section>
-    
-        <!-- Certifications List -->
-        <section class="certs-list py-5">
-            <div class="container">
-                <div class="row">
-                    <!-- Certificación 1 -->
-                    <div class="col-lg-6 mb-4">
-                        <div class="card cert-card h-100">
-                            <div class="row g-0">
-                                <div class="col-md-4 cert-img-container">
-                                    <img src="img/cert1.jpg" class="img-fluid rounded-start" alt="Certificación 1">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h3 class="h5">Desarrollo Web Full Stack</h3>
-                                        <p class="text-muted">Platzi - 2022</p>
-                                        <p class="card-text">Certificación en desarrollo web completo, desde frontend hasta backend.</p>
-                                        <a href="#" class="btn btn-sm btn-outline-primary">Ver credencial</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+      <!-- Certifications Hero -->
+      <section class="certs-hero py-5 bg-secondary text-white">
+        <div class="container">
+          <h1 class="display-4 fw-bold text-center">Certificaciones</h1>
+          <p class="lead text-center">Mis credenciales y logros académicos</p>
+        </div>
+      </section>
+
+      <!-- Certifications List -->
+      <section class="certs-list py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Certificación 1 -->
+            <div class="col-lg-6 mb-4">
+              <div class="card cert-card h-100">
+                <div class="row g-0">
+                  <div class="col-md-4 cert-img-container">
+                    <img
+                      src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742885689/React_JS_asjkfl.png"
+                      class="img-fluid rounded-start"
+                      alt="Certificación 1"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="h5">React</h3>
+                      <p class="text-muted">Coderhouse - 2025</p>
+                      <p class="card-text">
+                        Certificación en desarrollo web contemplando el
+                        framework React.
+                      </p>
+                      <a
+                        href="https://pub.coderhouse.com/certificates/887f2358-1540-40e2-b4e9-8a846bc99be6?v=1"
+                        class="btn btn-sm btn-outline-primary"
+                        >Ver credencial</a
+                      >
                     </div>
-                    
-                    <!-- Certificación 2 -->
-                    <!-- Certificación 3 -->
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
-    
-        <!-- Skills Chart -->
-        <section class="skills-chart py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">Mis Habilidades Certificadas</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="skill-item">
-                            <div class="d-flex justify-content-between">
-                                <span>HTML/CSS</span>
-                                <span>95%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <!-- Repetir para otras habilidades -->
+
+            <!-- Certificación 2 -->
+            <div class="col-lg-6 mb-4">
+              <div class="card cert-card h-100">
+                <div class="row g-0">
+                  <div class="col-md-4 cert-img-container">
+                    <img
+                      src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742886027/diploma-typescript_page-0001_x9d33h.jpg"
+                      class="img-fluid rounded-start"
+                      alt="Certificación 1"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="h5">Fundamentos de TypeScript</h3>
+                      <p class="text-muted">Platzi - 2025</p>
+                      <p class="card-text">
+                        Certificación sobre los fundamentos que abarca el
+                        lenguaje de programación TypeScript.
+                      </p>
+                      <a
+                        href="https://platzi.com/p/angel.quispe.navarro/curso/2878-typescript/diploma/detalle/"
+                        class="btn btn-sm btn-outline-primary"
+                        >Ver credencial</a
+                      >
                     </div>
-                    <div class="col-md-6">
-                        <canvas id="skillsChart"></canvas>
-                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+
+            <!-- Certificación 3 -->
+            <div class="col-lg-6 mb-4">
+              <div class="card cert-card h-100">
+                <div class="row g-0">
+                  <div class="col-md-4 cert-img-container">
+                    <img
+                      src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742886027/diploma-gitgithub_page-0001_fn1qbn.jpg"
+                      class="img-fluid rounded-start"
+                      alt="Certificación 1"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="h5">Git y GitHub</h3>
+                      <p class="text-muted">Platzi - 2025</p>
+                      <p class="card-text">
+                        Certificación en el manejo y dominio de las herramientas
+                        de Control de Versiones Git y GitHub.
+                      </p>
+                      <a
+                        href="https://platzi.com/p/angel.quispe.navarro/curso/11059-gitgithub/diploma/detalle/"
+                        class="btn btn-sm btn-outline-primary"
+                        >Ver credencial</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certificación 4 -->
+            <div class="col-lg-6 mb-4">
+              <div class="card cert-card h-100">
+                <div class="row g-0">
+                  <div class="col-md-4 cert-img-container">
+                    <img
+                      src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742886027/diploma-trello_page-0001_sq0sch.jpg"
+                      class="img-fluid rounded-start"
+                      alt="Certificación 1"
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="h5">
+                        Administración de Actividades con Trello
+                      </h3>
+                      <p class="text-muted">Platzi - 2025</p>
+                      <p class="card-text">
+                        Certificación en el uso y la gestión utilizando la
+                        herramienta Trello.
+                      </p>
+                      <a
+                        href="https://platzi.com/p/angel.quispe.navarro/curso/1400-trello/diploma/detalle/"
+                        class="btn btn-sm btn-outline-primary"
+                        >Ver credencial</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills-->
+      <section class="skills-chart py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center mb-5">Mis Habilidades Certificadas</h2>
+          <div class="row">
+            <div class="col-md-6 mb-4">
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>HTML/CSS</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>JavaScript</span>
+                  <span>65%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>TypeScript</span>
+                  <span>25%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>React</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Next.js</span>
+                  <span>45%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skill-item">
+                <div class="d-flex justify-content-between">
+                  <span>Git y GitHub</span>
+                  <span>75%</span>
+                </div>
+                <div class="progress">
+                  <div
+                    class="progress-bar bg-success"
+                    role="progressbar"
+                    style="width: 95%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <canvas id="skillsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Footer común a todas las páginas -->
+    <!-- Footer-->
     <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5 class="footer-heading">Redes Sociales</h5>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="fab fa-github"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0">© 2023 Mi Portafolio. Todos los derechos reservados.</p>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="footer-heading">Redes Sociales</h5>
+            <div class="social-links">
+              <a href="https://github.com/LuiangDev" class="text-white me-3"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/luis-angel-quispe/"
+                class="text-white me-3"
+                ><i class="fab fa-linkedin"></i
+              ></a>
             </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">© 2025 LuiangDev. Todos los derechos reservados.</p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Tu JS -->
+    <!-- Main JS -->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
