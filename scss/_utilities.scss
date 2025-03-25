@@ -1,0 +1,42 @@
+// Generación automática de clases de spacing
+@each $name, $value in $spacers {
+  .m-#{$name} {
+    margin: $value;
+  }
+  .p-#{$name} {
+    padding: $value;
+  }
+  .mt-#{$name} {
+    margin-top: $value;
+  }
+  .mb-#{$name} {
+    margin-bottom: $value;
+  }
+  .ml-#{$name} {
+    margin-left: $value;
+  }
+  .mr-#{$name} {
+    margin-right: $value;
+  }
+  .mx-#{$name} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+}
+
+// Generación de clases de colores
+@each $name, $color in $theme-colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  .text-#{$name} {
+    color: $color;
+  }
+  .border-#{$name} {
+    border-color: $color;
+  }
+}
