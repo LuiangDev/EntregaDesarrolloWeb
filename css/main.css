@@ -153,27 +153,27 @@
 }
 
 .bg-primary {
-  background-color: #3498db;
+  background-color: #00b181;
 }
 
 .text-primary {
-  color: #3498db;
+  color: #00b181;
 }
 
 .border-primary {
-  border-color: #3498db;
+  border-color: #00b181;
 }
 
 .bg-secondary {
-  background-color: #2ecc71;
+  background-color: #ffffff;
 }
 
 .text-secondary {
-  color: #2ecc71;
+  color: #ffffff;
 }
 
 .border-secondary {
-  border-color: #2ecc71;
+  border-color: #ffffff;
 }
 
 .bg-light {
@@ -222,16 +222,16 @@ h1, h2, h3 {
 }
 
 a {
-  color: #3498db;
+  color: #00b181;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 a:hover {
-  color: rgb(29.2970711297, 110.6778242678, 165.2029288703);
+  color: rgb(0, 100.5, 73.2457627119);
 }
 
 header {
-  background: #2ecc71;
+  background: #ffffff;
   padding: 1.25rem;
 }
 header nav {
@@ -250,7 +250,7 @@ header nav ul li a {
   color: white;
 }
 header nav ul li a:hover {
-  color: #3498db;
+  color: #00b181;
 }
 
 @media (max-width: 48em) {
