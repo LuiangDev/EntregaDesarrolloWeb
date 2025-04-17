@@ -51,7 +51,7 @@
 [https://luiangdev.github.io/EntregaDesarrolloWeb/](https://luiangdev.github.io/EntregaDesarrolloWeb/)
 
 🔗 **Sitio Web en Netlify:**  
-[https://luiangdev-my-portfolio.netlify.app](https://luiangdev-my-portfolio.netlify.app)
+[https://luiangdev-portfolio.netlify.app](https://luiangdev-portfolio.netlify.app)
 
 ## 🧪 Cómo Probar el Proyecto
 
