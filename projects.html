@@ -3,21 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio | Página específica</title>
-    <!-- Bootstrap-->
+    <link rel="icon" type="image/png" href="img/icono.png" />
+    <meta
+      name="description"
+      content="Explora los proyectos de Luis Angel desarrollados con tecnologías modernas como React, Next.js y TailwindCSS."
+    />
+    <meta
+      name="keywords"
+      content="Portafolio, Proyectos Web, Frontend, Fullstack, React, Java, SpringBoot"
+    />
+    <meta name="author" content="Luis Angel Quispe Navarro" />
+    <title>Mi Portafolio | Proyectos</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Enlace para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- CSS generado desde SASS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
+    <!-- Barra de progreso de scroll -->
+    <div id="scrollProgressBar"></div>
     <!-- Navbar -->
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -53,9 +62,9 @@
       </nav>
     </header>
 
-    <!-- Contenido-->
+    <!-- Contenido -->
     <main class="flex-grow-1">
-      <!-- Projects Hero -->
+      <!-- Hero -->
       <section class="projects-hero py-5 bg-primary text-white">
         <div class="container">
           <h1 class="display-4 fw-bold text-center">Mis Proyectos</h1>
@@ -65,7 +74,7 @@
         </div>
       </section>
 
-      <!-- Projects Filter -->
+      <!-- Filtros -->
       <section class="filter-section py-4 bg-light">
         <div class="container">
           <div class="d-flex justify-content-center flex-wrap">
@@ -97,7 +106,7 @@
         </div>
       </section>
 
-      <!-- Projects Grid -->
+      <!-- Proyectos -->
       <section class="projects-grid py-5">
         <div class="container">
           <div class="row g-4">
@@ -110,7 +119,7 @@
                 <img
                   src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742884115/FIPE01_oiwzz6.png"
                   class="card-img-top"
-                  alt="Proyecto E-commerce"
+                  alt="FIPE - Planificador de Finanzas Personales"
                 />
                 <div class="card-body">
                   <div class="badges mb-3">
@@ -119,10 +128,10 @@
                     <span class="badge bg-primary me-1">Node.js</span>
                     <span class="badge bg-primary">MongoDB</span>
                   </div>
-                  <h3 class="h5">Planfificador de Finanzas Personales: FIPE</h3>
+                  <h3 class="h5">Planificador de Finanzas Personales: FIPE</h3>
                   <p class="card-text">
-                    Plataforma completa que te permite organizar y planfificar
-                    tus finanzas personales, abarcando tus ingresos y gastos.
+                    Plataforma completa que permite organizar y planificar tus
+                    finanzas personales.
                   </p>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -145,7 +154,7 @@
                 <img
                   src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742883889/Portada_FRESKO_qrwrrw.png"
                   class="card-img-top"
-                  alt="Proyecto E-commerce"
+                  alt="FRESKO - E-commerce de Heladería"
                 />
                 <div class="card-body">
                   <div class="badges mb-3">
@@ -156,9 +165,8 @@
                   </div>
                   <h3 class="h5">E-commerce de una Heladería: FRESKO</h3>
                   <p class="card-text">
-                    Plataforma de E-commerce para una Heladería, en el cual
-                    pueden elegir entre los productos del catálogo y efectuar
-                    compras en línea.
+                    Tienda online para venta de helados, con navegación fluida y
+                    adaptable a todos los dispositivos.
                   </p>
                 </div>
                 <div class="card-footer bg-transparent">
@@ -171,13 +179,14 @@
                 </div>
               </div>
             </div>
-            <!-- Proyecto 3 -->
+
+            <!-- Proyecto 3: puedes agregar más proyectos aquí -->
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer-->
+    <!-- Footer -->
     <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row">
@@ -201,9 +210,12 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Botón scroll top -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Main JS -->
     <script src="js/main.js"></script>
   </body>
 </html>

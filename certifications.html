@@ -3,22 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio | Página específica</title>
-    <!-- Bootstrap CSS -->
+    <link rel="icon" type="image/png" href="img/icono.png" />
+    <meta
+      name="description"
+      content="Certificaciones obtenidas por Luis Angel Quispe en tecnologías como React, TypeScript, Git, y más."
+    />
+    <meta
+      name="keywords"
+      content="Certificaciones, React, TypeScript, Git, Frontend, Desarrollo Web, Luis Angel"
+    />
+    <meta name="author" content="Luis Angel Quispe Navarro" />
+    <title>Mi Portafolio | Certificaciones</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Enlace para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <!-- CSS generado desde SASS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <!-- Navbar -->
+    <!-- Barra de progreso de scroll -->
+    <div id="scrollProgressBar"></div>
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -53,9 +61,7 @@
       </nav>
     </header>
 
-    <!-- Contenido-->
     <main class="flex-grow-1">
-      <!-- Certifications Hero -->
       <section class="certs-hero py-5 bg-secondary text-white">
         <div class="container">
           <h1 class="display-4 fw-bold text-center">Certificaciones</h1>
@@ -63,11 +69,9 @@
         </div>
       </section>
 
-      <!-- Certifications List -->
       <section class="certs-list py-5">
         <div class="container">
           <div class="row">
-            <!-- Certificación 1 -->
             <div class="col-lg-6 mb-4">
               <div class="card cert-card h-100">
                 <div class="row g-0">
@@ -75,7 +79,7 @@
                     <img
                       src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742885689/React_JS_asjkfl.png"
                       class="img-fluid rounded-start"
-                      alt="Certificación 1"
+                      alt="React Certification"
                     />
                   </div>
                   <div class="col-md-8">
@@ -97,7 +101,6 @@
               </div>
             </div>
 
-            <!-- Certificación 2 -->
             <div class="col-lg-6 mb-4">
               <div class="card cert-card h-100">
                 <div class="row g-0">
@@ -105,7 +108,7 @@
                     <img
                       src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742886027/diploma-typescript_page-0001_x9d33h.jpg"
                       class="img-fluid rounded-start"
-                      alt="Certificación 1"
+                      alt="TypeScript Certification"
                     />
                   </div>
                   <div class="col-md-8">
@@ -113,8 +116,7 @@
                       <h3 class="h5">Fundamentos de TypeScript</h3>
                       <p class="text-muted">Platzi - 2025</p>
                       <p class="card-text">
-                        Certificación sobre los fundamentos que abarca el
-                        lenguaje de programación TypeScript.
+                        Certificación sobre fundamentos del lenguaje TypeScript.
                       </p>
                       <a
                         href="https://platzi.com/p/angel.quispe.navarro/curso/2878-typescript/diploma/detalle/"
@@ -127,7 +129,6 @@
               </div>
             </div>
 
-            <!-- Certificación 3 -->
             <div class="col-lg-6 mb-4">
               <div class="card cert-card h-100">
                 <div class="row g-0">
@@ -135,7 +136,7 @@
                     <img
                       src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742886027/diploma-gitgithub_page-0001_fn1qbn.jpg"
                       class="img-fluid rounded-start"
-                      alt="Certificación 1"
+                      alt="Git y GitHub"
                     />
                   </div>
                   <div class="col-md-8">
@@ -143,8 +144,8 @@
                       <h3 class="h5">Git y GitHub</h3>
                       <p class="text-muted">Platzi - 2025</p>
                       <p class="card-text">
-                        Certificación en el manejo y dominio de las herramientas
-                        de Control de Versiones Git y GitHub.
+                        Certificación en el manejo de herramientas de control de
+                        versiones Git y GitHub.
                       </p>
                       <a
                         href="https://platzi.com/p/angel.quispe.navarro/curso/11059-gitgithub/diploma/detalle/"
@@ -157,7 +158,6 @@
               </div>
             </div>
 
-            <!-- Certificación 4 -->
             <div class="col-lg-6 mb-4">
               <div class="card cert-card h-100">
                 <div class="row g-0">
@@ -165,7 +165,7 @@
                     <img
                       src="https://res.cloudinary.com/dw9nir0q9/image/upload/v1742886027/diploma-trello_page-0001_sq0sch.jpg"
                       class="img-fluid rounded-start"
-                      alt="Certificación 1"
+                      alt="Trello Certification"
                     />
                   </div>
                   <div class="col-md-8">
@@ -175,7 +175,7 @@
                       </h3>
                       <p class="text-muted">Platzi - 2025</p>
                       <p class="card-text">
-                        Certificación en el uso y la gestión utilizando la
+                        Certificación en el uso y gestión de tareas con la
                         herramienta Trello.
                       </p>
                       <a
@@ -192,16 +192,15 @@
         </div>
       </section>
 
-      <!-- Skills-->
       <section class="skills-chart py-5 bg-light">
         <div class="container">
           <h2 class="text-center mb-5">Mis Habilidades Certificadas</h2>
           <div class="row">
             <div class="col-md-6 mb-4">
+              <!-- Aquí podrías mejorar el gráfico si deseas -->
               <div class="skill-item">
                 <div class="d-flex justify-content-between">
-                  <span>HTML/CSS</span>
-                  <span>75%</span>
+                  <span>HTML/CSS</span><span>75%</span>
                 </div>
                 <div class="progress">
                   <div
@@ -211,11 +210,9 @@
                   ></div>
                 </div>
               </div>
-
               <div class="skill-item">
                 <div class="d-flex justify-content-between">
-                  <span>JavaScript</span>
-                  <span>65%</span>
+                  <span>JavaScript</span><span>65%</span>
                 </div>
                 <div class="progress">
                   <div
@@ -225,11 +222,9 @@
                   ></div>
                 </div>
               </div>
-
               <div class="skill-item">
                 <div class="d-flex justify-content-between">
-                  <span>TypeScript</span>
-                  <span>25%</span>
+                  <span>TypeScript</span><span>25%</span>
                 </div>
                 <div class="progress">
                   <div
@@ -239,11 +234,9 @@
                   ></div>
                 </div>
               </div>
-
               <div class="skill-item">
                 <div class="d-flex justify-content-between">
-                  <span>React</span>
-                  <span>75%</span>
+                  <span>React</span><span>75%</span>
                 </div>
                 <div class="progress">
                   <div
@@ -253,11 +246,9 @@
                   ></div>
                 </div>
               </div>
-
               <div class="skill-item">
                 <div class="d-flex justify-content-between">
-                  <span>Next.js</span>
-                  <span>45%</span>
+                  <span>Next.js</span><span>45%</span>
                 </div>
                 <div class="progress">
                   <div
@@ -267,11 +258,9 @@
                   ></div>
                 </div>
               </div>
-
               <div class="skill-item">
                 <div class="d-flex justify-content-between">
-                  <span>Git y GitHub</span>
-                  <span>75%</span>
+                  <span>Git y GitHub</span><span>75%</span>
                 </div>
                 <div class="progress">
                   <div
@@ -290,7 +279,6 @@
       </section>
     </main>
 
-    <!-- Footer-->
     <footer class="bg-dark text-white py-4">
       <div class="container">
         <div class="row">
@@ -314,9 +302,12 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Botón scroll top -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Main JS -->
     <script src="js/main.js"></script>
   </body>
 </html>
