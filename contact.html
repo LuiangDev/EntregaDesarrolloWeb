@@ -3,8 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio | Contacto</title>
     <link rel="icon" type="image/png" href="img/icono.png" />
+    <meta
+      name="description"
+      content="Ponte en contacto con Luis Angel para colaborar en proyectos de desarrollo web y tecnología."
+    />
+    <meta
+      name="keywords"
+      content="Contacto, Luis Angel, Portafolio, Desarrollador Web, Proyectos, Frontend"
+    />
+    <meta name="author" content="Luis Angel Quispe Navarro" />
+    <title>Mi Portafolio | Contacto</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,14 +26,47 @@
   </head>
 
   <body class="d-flex flex-column min-vh-100">
-    <!-- Sección de encabezado -->
+    <!-- Barra de progreso de scroll -->
+    <div id="scrollProgressBar"></div>
+
+    <!-- Navbar -->
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">LuiangDev.</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="certifications.html">Certificaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <main class="flex-grow-1">
       <section class="contact-hero py-5 bg-primary text-white text-center">
         <div class="container">
           <h1 class="display-4 fw-bold">Contacto</h1>
-          <p class="lead">
-            ¿Listo para empezar tu próximo proyecto? ¡Hablemos!
-          </p>
+          <p class="lead">¿Listo para empezar tu próximo proyecto? ¡Hablemos!</p>
         </div>
       </section>
 
@@ -38,54 +80,24 @@
                   <form id="contactForm">
                     <div class="row">
                       <div class="col-md-6 mb-4">
-                        <label for="name" class="form-label"
-                          >Nombre completo</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          name="name"
-                          required
-                        />
+                        <label for="name" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="name" name="name" required />
                       </div>
                       <div class="col-md-6 mb-4">
-                        <label for="email" class="form-label"
-                          >Correo electrónico</label
-                        >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                          required
-                        />
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required />
                       </div>
                     </div>
                     <div class="mb-4">
                       <label for="subject" class="form-label">Asunto</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        name="subject"
-                        required
-                      />
+                      <input type="text" class="form-control" id="subject" name="subject" required />
                     </div>
                     <div class="mb-4">
                       <label for="message" class="form-label">Mensaje</label>
-                      <textarea
-                        class="form-control"
-                        id="message"
-                        name="message"
-                        rows="5"
-                        required
-                      ></textarea>
+                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary btn-lg">
-                        Enviar Mensaje
-                      </button>
+                      <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
                     </div>
                   </form>
                 </div>
@@ -96,48 +108,69 @@
       </section>
     </main>
 
-    <!-- Librerías JS -->
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="footer-heading">Redes Sociales</h5>
+            <div class="social-links">
+              <a href="https://github.com/LuiangDev" class="text-white me-3"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/luis-angel-quispe/" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">© 2025 LuiangDev. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botón scroll top -->
+    <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Volver arriba">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Librerías -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
 
-    <!-- Lógica del formulario -->
+    <!-- EmailJS Script -->
     <script>
       emailjs.init("DRSXFqKgA-6iXDEm_");
 
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
 
-          const form = e.target;
+        const form = e.target;
 
-          const templateParams = {
-            name: form.name.value,
-            email: form.email.value,
-            subject: form.subject.value,
-            message: form.message.value,
-          };
+        const templateParams = {
+          name: form.name.value,
+          email: form.email.value,
+          subject: form.subject.value,
+          message: form.message.value,
+        };
 
-          emailjs
-            .send("service_7i9re3p", "template_kqij2pc", templateParams)
-            .then(() => {
-              Swal.fire({
-                icon: "success",
-                title: "Mensaje enviado",
-                text: "Gracias por contactarme. Te responderé pronto.",
-              });
-              form.reset();
-            })
-            .catch((error) => {
-              Swal.fire({
-                icon: "error",
-                title: "Error al enviar",
-                text: "Algo salió mal. Intenta nuevamente o revisa tus datos.",
-              });
-              console.error("EmailJS error:", error);
+        emailjs.send("service_7i9re3p", "template_kqij2pc", templateParams)
+          .then(() => {
+            Swal.fire({
+              icon: "success",
+              title: "Mensaje enviado",
+              text: "Gracias por contactarme. Te responderé pronto.",
             });
-        });
+            form.reset();
+          })
+          .catch((error) => {
+            Swal.fire({
+              icon: "error",
+              title: "Error al enviar",
+              text: "Algo salió mal. Intenta nuevamente o revisa tus datos.",
+            });
+            console.error("EmailJS error:", error);
+          });
+      });
     </script>
   </body>
 </html>
