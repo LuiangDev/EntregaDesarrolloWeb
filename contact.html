@@ -22,7 +22,9 @@
       <section class="contact-hero py-5 bg-primary text-white text-center">
         <div class="container">
           <h1 class="display-4 fw-bold">Contacto</h1>
-          <p class="lead">¿Listo para empezar tu próximo proyecto? ¡Hablemos!</p>
+          <p class="lead">
+            ¿Listo para empezar tu próximo proyecto? ¡Hablemos!
+          </p>
         </div>
       </section>
 
@@ -36,24 +38,54 @@
                   <form id="contactForm">
                     <div class="row">
                       <div class="col-md-6 mb-4">
-                        <label for="name" class="form-label">Nombre completo</label>
-                        <input type="text" class="form-control" id="name" name="name" required />
+                        <label for="name" class="form-label"
+                          >Nombre completo</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          required
+                        />
                       </div>
                       <div class="col-md-6 mb-4">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" name="email" required />
+                        <label for="email" class="form-label"
+                          >Correo electrónico</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          required
+                        />
                       </div>
                     </div>
                     <div class="mb-4">
                       <label for="subject" class="form-label">Asunto</label>
-                      <input type="text" class="form-control" id="subject" name="subject" required />
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        name="subject"
+                        required
+                      />
                     </div>
                     <div class="mb-4">
                       <label for="message" class="form-label">Mensaje</label>
-                      <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                      ></textarea>
                     </div>
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Enviar Mensaje
+                      </button>
                     </div>
                   </form>
                 </div>
@@ -71,38 +103,41 @@
 
     <!-- Lógica del formulario -->
     <script>
-      emailjs.init("service_7i9re3p"); 
+      emailjs.init("DRSXFqKgA-6iXDEm_");
 
-      document.getElementById("contactForm").addEventListener("submit", function (e) {
-        e.preventDefault();
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
 
-        const form = e.target;
+          const form = e.target;
 
-        const templateParams = {
-          name: form.name.value,
-          email: form.email.value,
-          subject: form.subject.value,
-          message: form.message.value
-        };
+          const templateParams = {
+            name: form.name.value,
+            email: form.email.value,
+            subject: form.subject.value,
+            message: form.message.value,
+          };
 
-        emailjs.send("service_7i9re3p", "template_kqij2pc", templateParams)
-          .then(() => {
-            Swal.fire({
-              icon: "success",
-              title: "Mensaje enviado",
-              text: "Gracias por contactarme. Te responderé pronto.",
+          emailjs
+            .send("service_7i9re3p", "template_kqij2pc", templateParams)
+            .then(() => {
+              Swal.fire({
+                icon: "success",
+                title: "Mensaje enviado",
+                text: "Gracias por contactarme. Te responderé pronto.",
+              });
+              form.reset();
+            })
+            .catch((error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Error al enviar",
+                text: "Algo salió mal. Intenta nuevamente o revisa tus datos.",
+              });
+              console.error("EmailJS error:", error);
             });
-            form.reset();
-          })
-          .catch((error) => {
-            Swal.fire({
-              icon: "error",
-              title: "Error al enviar",
-              text: "Algo salió mal. Intenta nuevamente o revisa tus datos.",
-            });
-            console.error("EmailJS error:", error);
-          });
-      });
+        });
     </script>
   </body>
 </html>
