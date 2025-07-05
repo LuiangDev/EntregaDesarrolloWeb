@@ -1,5 +1,5 @@
 <div align="center">
-<img src="portada.png" alt="portada" />
+<img src="https://github.com/LuiangDev/EntregaDesarrolloWeb/blob/main/img/portada.png" alt="portada" />
 </div>
 
 # LuiangDev | Portafolio Web Personal 💻🌐
@@ -7,7 +7,7 @@
 **LuiangDev** es un sitio web de portafolio personal diseñado para presentar mi perfil profesional como Desarrollador Front-End. Este proyecto integra las mejores prácticas en diseño, accesibilidad y rendimiento web, incluyendo optimización SEO, diseño responsive, integración de librerías modernas, y una estructura modular con SASS.
 
 <div align="center">
-<img src="https://github.com/LuiangDev/EntregaDesarrolloWeb/blob/main/img/home-mockup.png" alt="mockup" />
+<img src="https://github.com/LuiangDev/EntregaDesarrolloWeb/blob/main/img/home-mockup2.png" alt="mockup" />
 </div>
 
 ## 🧩 Secciones Principales:
