@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://github.com/LuiangDev/EntregaDesarrolloWeb/blob/main/img/portada.png" alt="portada" />
+<img src="portada.png" alt="portada" />
 </div>
 
 # LuiangDev | Portafolio Web Personal 💻🌐
